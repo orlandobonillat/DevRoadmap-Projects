@@ -2,6 +2,7 @@
   display: flex;
   width: 100%;
   justify-content: space-between;
+  align-items: center;
 }
 header {
   display: flex;
@@ -28,4 +29,17 @@ header {
 }
 .links a:hover {
   text-decoration: underline; /* Subrayado al pasar sobre los enlaces */
+}
+.image-logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover; /* Asegura que la imagen se ajuste bien dentro del contenedor */
+  margin-right: 10px; /* Espacio entre el logo y el texto del nombre */
+}
+.home-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0px;
 }
