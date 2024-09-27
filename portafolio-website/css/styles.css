@@ -1,17 +1,31 @@
 .nav-principal {
   display: flex;
-  justify-content: end;
-  align-items: end;
+  width: 100%;
+  justify-content: space-between;
 }
 header {
   display: flex;
-  flex-direction: row;
-  justify-content: start;
-  align-items: start;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+.logo {
+  font-size: 1.5rem; /* Tamaño del texto del logo */
+  font-weight: bold;
+  display: flex;
+  align-items: center;
 }
 .links {
   display: flex;
-  justify-content: end;
-  align-items: end;
-  flex-direction: row-reverse;
+  justify-content: flex-end;
+  gap: 15px;
+}
+
+.links a {
+  text-decoration: none;
+  color: black; /* Color de los enlaces */
+  font-weight: normal;
+}
+.links a:hover {
+  text-decoration: underline; /* Subrayado al pasar sobre los enlaces */
 }
