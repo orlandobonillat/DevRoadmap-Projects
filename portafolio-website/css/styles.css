@@ -1,0 +1,17 @@
+.nav-principal {
+  display: flex;
+  justify-content: end;
+  align-items: end;
+}
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: start;
+}
+.links {
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  flex-direction: row-reverse;
+}
