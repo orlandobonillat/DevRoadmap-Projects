@@ -16,6 +16,7 @@
     rel="stylesheet">
 </head>
 
+
 <body>
   <header>
     <nav class="nav-principal">
@@ -29,10 +30,15 @@
         <a href="articles.html">Articles</a> /
         <a href="contact.html">Contact</a>
       </nav>
+      <button class="menu-toggle" aria-label="Toggle navigation">
+        <span class="burger"></span>
+        <span class="burger"></span>
+        <span class="burger"></span>
+      </button>
     </nav>
   </header>
 
-  <main>
+  <main class="page">
     <section class="home-section">
       <div class="home-section-content">
         <h1 class="title-home">Frontend Developer</h1>
@@ -40,7 +46,7 @@
       </div>
 
     </section>
-    <section class="container">
+    <section class="content">
       <div class="main-projects">
         <h2>Projects</h2>
         <p>HTML Only Portfolio</p>
@@ -119,5 +125,15 @@
     <p>&copy; All rights reserved. 2025</p>
   </footer>
 </body>
-
+<script>
+  // Seleccionar el botón y el menú
+  const burgerButton = document.querySelector('.menu-toggle');
+  const menu = document.querySelector('.menu');
+  
+  // Añadir el evento para el clic
+  burgerButton.addEventListener('click', () => {
+    // Alternar la clase 'active' en el menú para mostrar u ocultar
+    menu.classList.toggle('active');
+  });
+  </script>
 </html>
