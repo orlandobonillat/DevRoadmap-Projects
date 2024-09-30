@@ -242,6 +242,7 @@ h2 {
 
 /* Media Queries for Responsive layout */
 
+/* Media Queries for navigation navbar */
 @media (width <=550px) {
   .nav-principal {
     display: flex;
@@ -249,10 +250,7 @@ h2 {
     text-align: center;
     gap: 20px;
   }
-}
 
-/* Media Queries for navigation navbar */
-@media (width <=550px) {
   .section-reviews {
     flex-direction: column;
     align-items: center;
@@ -282,9 +280,8 @@ h2 {
   .professor-reviews {
     text-align: center;
   }
-}
 
-@media (width <= 550px) {
+  /* Media Queries for navigation navbar */
   .menu-toggle {
     display: block;
     transition: transform 0.3s ease;
