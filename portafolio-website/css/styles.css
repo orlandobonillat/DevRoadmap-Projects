@@ -78,11 +78,14 @@ a:hover {
   color: #666;
 }
 
-.home-section-content {
+.home-section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 50px 0;
+  margin: 14rem 0;
+}
+.home-section-content {
+  width: 100%;
 }
 
 .content {
@@ -96,13 +99,18 @@ a:hover {
 .main-experience,
 .main-education {
   flex: 1;
+  opacity: 1;
   min-width: 300px;
-  border: 1px solid #ccc;
+  border: 1px solid rgba(63, 63, 70, .4);;
   padding: 20px;
   border-radius: 1rem;
+}
+.main-projects:hover,
+.main-experience:hover,
+.main-education:hover,
+.content-reviews:hover {
   box-shadow: var(--box-shadow-dark);
 }
-
 h2 {
   margin-bottom: 15px;
   padding-bottom: 10px;
@@ -153,7 +161,7 @@ a:hover {
 }
 
 .section-reviews {
-  margin: 0 auto;
+  margin-top: 5rem;
   padding: 20px;
   font-family: Arial, sans-serif;
 }
@@ -171,7 +179,6 @@ h2 {
 
 .content-reviews {
   flex: 1;
-  border: 1px solid #ccc;
   border-radius: 1rem;
   padding: 20px;
   display: flex;
