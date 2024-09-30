@@ -242,8 +242,9 @@ h2 {
 
 /* Media Queries for Responsive layout */
 
-/* Media Queries for navigation navbar */
-@media (width <=550px) {
+@media (width <= 550px) {
+  /* Media Queries for navigation navbar */
+
   .nav-principal {
     display: flex;
     flex-direction: column;
@@ -251,37 +252,6 @@ h2 {
     gap: 20px;
   }
 
-  .section-reviews {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .main-reviews {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .content-reviews {
-    min-height: auto;
-    margin-bottom: 20px;
-  }
-}
-@media (width <= 550px) {
-  .main-reviews {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .content-reviews {
-    width: 100%;
-    margin-bottom: 10px;
-  }
-
-  .professor-reviews {
-    text-align: center;
-  }
-
-  /* Media Queries for navigation navbar */
   .menu-toggle {
     display: block;
     transition: transform 0.3s ease;
@@ -304,6 +274,32 @@ h2 {
   }
   .menu a {
     padding: 5px;
+  }
+
+  /* Media Queries for Page*/
+
+  .section-reviews .main-reviews {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .content-reviews {
+    min-height: auto;
+    margin-bottom: 20px;
+  }
+
+  .main-reviews {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .content-reviews {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .professor-reviews {
+    text-align: center;
   }
 }
 
