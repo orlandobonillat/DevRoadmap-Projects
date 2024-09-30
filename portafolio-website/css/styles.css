@@ -56,6 +56,7 @@ a:hover {
   padding-left: 2.5rem;
   padding-right: 2.5rem;
   background: var(--main-color);
+  height: 100%;
 }
 .image-logo {
   width: 4rem;
@@ -203,10 +204,14 @@ h2 {
 
 .footer {
   text-align: center;
-  padding: 1rem;
+  margin-top: 8rem;
+  padding-top: 2.5rem;
+  padding-bottom: 4rem;
   font-size: 0.8em;
   color: #888;
+  width: 100%;
   background-color: var(--main-color);
+  box-shadow: 0 -1px 0 0 hsla(0, 0%, 100%, 0.1);
 }
 
 .menu-toggle {
@@ -320,7 +325,7 @@ h2 {
 /* Modo Oscuro */
 @media (prefers-color-scheme: dark) {
   :root {
-    --background-color: #000;
+    --background-color: #18181b;
     --text-color: #f7f7f7;
     --header-background: #000;
     --menu-color: #f7f7f7;
