@@ -313,7 +313,7 @@ h2 {
   --link-color: #666;
   --link-hover-color: #8f1744;
   --link-background: #e5e0e0;
-  --box-shadow-dark: 0 2px 5px rgba(0, 0, 0, 0.1);
+  --box-shadow-dark: 0 2px 30px rgba(0, 0, 0, 0.1);
 }
 
 /* Modo Oscuro */
@@ -327,6 +327,6 @@ h2 {
     --link-color: #888;
     --link-hover-color: #fff;
     --link-background: #333;
-    --box-shadow-dark: 0 2px 10px rgba(255, 255, 255, 0.1); /* Sombra para el modo oscuro */
+    --box-shadow-dark: 0 2px 30px rgba(255, 255, 255, 0.1); /* Sombra para el modo oscuro */
   }
 }
