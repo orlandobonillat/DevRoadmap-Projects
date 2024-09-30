@@ -311,7 +311,7 @@ h2 {
 
 /* Modo Claro (por defecto) */
 :root {
-  --background-color: #fafafa;
+  --background-color: #fff;
   --text-color: #171717;
   --header-background: #fafafa;
   --menu-color: #171717;
