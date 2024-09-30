@@ -51,8 +51,8 @@ a:hover {
 .page {
   display: flex;
   flex-direction: column;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
   background: var(--main-color);
 }
 .image-logo {
@@ -84,9 +84,7 @@ a:hover {
 .content {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
-  padding: 20px;
-  max-width: 1200px;
+  gap: 30px;
   margin: 0 auto;
 }
 
@@ -299,7 +297,7 @@ h2 {
     flex-direction: column;
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.3s ease, opacity 0.3s ease;
+    transition: max-height 0.6s ease, opacity 0.8s ease;
     opacity: 0;
   }
 
