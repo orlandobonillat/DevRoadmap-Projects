@@ -1,8 +1,5 @@
-
 * {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 
 body {
@@ -19,8 +16,6 @@ body {
   width: 100%;
   justify-content: space-between;
   align-items: center;
-
-
 }
 
 .name {
@@ -33,11 +28,13 @@ header {
   align-items: center;
   padding: 40px;
   background-color: var(--header-background);
-
+  position: sticky;
+  top: 0;
+  font-size: 14px;
 }
 
 .logo {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: bold;
   display: flex;
   align-items: center;
@@ -51,7 +48,13 @@ header {
 a:hover {
   text-decoration: underline;
 }
-
+.page {
+  display: flex;
+  flex-direction: column;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  background: var(--main-color);
+}
 .image-logo {
   width: 50px;
   height: 50px;
@@ -61,7 +64,7 @@ a:hover {
 }
 
 .title-home {
-  font-size: 48px;
+  font-size: 47px;
   font-weight: bold;
   text-align: center;
 }
@@ -95,8 +98,7 @@ a:hover {
   border: 1px solid #ccc;
   padding: 20px;
   border-radius: 5px;
-  box-shadow: var(--box-shadow-dark)
-
+  box-shadow: var(--box-shadow-dark);
 }
 
 h2 {
@@ -114,14 +116,25 @@ li {
 }
 
 a {
-  color: var(--link-color);
+  --tw-text-opacity: 1;
+  color: var(--link-color, var(--tw-text-opacity));
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 a:hover {
-  color: #004080;
-  text-decoration: underline;
+  text-decoration: none;
+  color: var(--link-hover-color);
+}
+.visit-profile {
+  font-size: 14px;
+  padding: 5px;
+  color: #0070f3;
+}
+.visit-profile:hover {
+  background: var(--link-background);
+  border-radius: 5px;
+  transition: all 0.3s ease;
 }
 
 .main-projects p {
@@ -134,15 +147,13 @@ a:hover {
 
 .main-experience h3 {
   margin-bottom: 5px;
-  color: #444;
+  color: #a1a1a1;
 }
-
 
 .section-reviews {
   margin: 0 auto;
   padding: 20px;
   font-family: Arial, sans-serif;
-
 }
 
 h2 {
@@ -165,16 +176,12 @@ h2 {
   flex-direction: column;
   justify-content: space-between;
   min-height: 150px;
-
-
 }
 
 .content-reviews p {
   margin: 0;
   font-style: italic;
-
 }
-
 
 .professor-reviews {
   margin-top: 10px;
@@ -200,21 +207,13 @@ h2 {
   color: #888;
 }
 
-.page {
-  display: flex;
-  flex-direction: column;
-}
-
-
 .menu-toggle {
   display: none;
   background: none;
   border: none;
   cursor: pointer;
   padding: 10px;
-  
 }
-
 
 .burger {
   width: 30px;
@@ -224,13 +223,11 @@ h2 {
   background-color: var(--menu-color);
   margin: 5px auto; /* Espaciado entre las líneas */
   transition: background-color 0.3s; /* Transición suave para el color */
-
-
 }
 
 .burger::before,
 .burger::after {
-  content: '';
+  content: "";
   width: 25px;
   position: absolute;
   left: 0;
@@ -245,92 +242,100 @@ h2 {
   top: 8px;
 }
 
-@media (width <= 550px) {
-  .menu-toggle {
-    display: block;
-  }
-
-  .menu {
-    display: none;
-    flex-direction: column;
-    gap: 10px;
-    text-align: center;
-  }
-
-  .menu.active {
-    display: flex;
-  }
-}
-
-
-
 /* Media Queries for Responsive layout */
-
 
 @media (width <=550px) {
   .nav-principal {
     display: flex;
-    justify-content: center;
     flex-direction: column;
-    align-items: center;
+    text-align: center;
     gap: 20px;
   }
 }
 
-
-  /* Media Queries for navigation bar */
-  @media (width <=550px) {
-    .section-reviews {
-      flex-direction: column;
-      align-items: center;
-    }
-
-    .main-reviews {
-      flex-direction: column;
-      align-items: center;
-    }
-
-    .content-reviews {
-      min-height: auto;
-      margin-bottom: 20px;
-    }
-  }
-  @media (width <= 550px) {
-    .main-reviews {
-      flex-direction: column;
-      gap: 10px;
-    }
-  
-    .content-reviews {
-      width: 100%;
-      margin-bottom: 10px;
-    }
-  
-    .professor-reviews {
-      text-align: center;
-    }
+/* Media Queries for navigation navbar */
+@media (width <=550px) {
+  .section-reviews {
+    flex-direction: column;
+    align-items: center;
   }
 
-  /* Modo Claro (por defecto) */
+  .main-reviews {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .content-reviews {
+    min-height: auto;
+    margin-bottom: 20px;
+  }
+}
+@media (width <= 550px) {
+  .main-reviews {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .content-reviews {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .professor-reviews {
+    text-align: center;
+  }
+}
+
+@media (width <= 550px) {
+  .menu-toggle {
+    display: block;
+    transition: transform 0.3s ease;
+  }
+
+  .menu {
+    top: 100%;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+    opacity: 0;
+  }
+
+  .menu.active {
+    max-height: 300px;
+    opacity: 1;
+  }
+  .menu a {
+    padding: 5px;
+  }
+}
+
+/* Modo Claro (por defecto) */
 :root {
- --background-color: linear-gradient(to right, #F7F7F7, #F5F5F5);
-  --text-color: #333;
-  --header-background: #ffffff;
-  --link-color: #0066cc;
-  --menu-color: #333;
+  --background-color: #fafafa;
+  --text-color: #171717;
+  --header-background: #fafafa;
+  --menu-color: #171717;
+  --main-color: #fafafa;
+  --link-color: #666;
+  --link-hover-color: #8f1744;
+  --link-background: #e5e0e0;
   --box-shadow-dark: 0 2px 5px rgba(0, 0, 0, 0.1);
-
 }
 
 /* Modo Oscuro */
 @media (prefers-color-scheme: dark) {
   :root {
-    --background-color: #1e1e1e;
+    --background-color: #000;
     --text-color: #f7f7f7;
-    --header-background: #333;
-    --link-color: #9cdcfe;
+    --header-background: #000;
     --menu-color: #f7f7f7;
+    --main-color: #000;
+    --link-color: #888;
+    --link-hover-color: #fff;
+    --link-background: #333;
     --box-shadow-dark: 0 2px 10px rgba(255, 255, 255, 0.1); /* Sombra para el modo oscuro */
-
   }
 }

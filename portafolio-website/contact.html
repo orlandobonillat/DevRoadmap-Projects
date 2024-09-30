@@ -1,67 +1,75 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Artículos sobre temas de desarrollo frontend, mejores prácticas." />
-  <meta name="keywords" content="Artículos frontend, desarrollo web, blog de tecnología, HTML, CSS, JavaScript" />
-  <meta name="author" content="Orlando Bonilla" />
-  <title>Frontend Developer - Contact</title>
-  <link rel="stylesheet" href="css/styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Artículos sobre temas de desarrollo frontend, mejores prácticas."
+    />
+    <meta
+      name="keywords"
+      content="Artículos frontend, desarrollo web, blog de tecnología, HTML, CSS, JavaScript"
+    />
+    <meta name="author" content="Orlando Bonilla" />
+    <title>Frontend Developer - Contact</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-      rel="stylesheet">
-</head>
+      rel="stylesheet"
+    />
+    <!-- Favicon -->
+    <link rel="icon" href="img/favicon.ico" type="image/ico" />
+  </head>
 
-<body>
-  <header>
-    <nav class="nav-principal">
-      <div class="logo">
-        <img src="img/unnamed.jpg" alt="logo" class="image-logo" />
-        <span>Orlando Bonilla</span>
-      </div>
-      <nav class="menu">
-        <a href="homepage.html">Home</a> 
-        <a href="projects.html">Projects</a> 
-        <a href="articles.html">Articles</a> 
-        <a href="contact.html">Contact</a>
+  <body>
+    <header>
+      <nav class="nav-principal">
+        <div class="logo">
+          <img src="img/unnamed.jpg" alt="logo" class="image-logo" />
+          <span>Orlando Bonilla</span>
+        </div>
+        <nav class="menu">
+          <a href="homepage.html">Home</a>
+          <a href="projects.html">Projects</a>
+          <a href="articles.html">Articles</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <button class="menu-toggle" aria-label="Toggle navigation">
+          <span class="burger"></span>
+          <span class="burger"></span>
+          <span class="burger"></span>
+        </button>
       </nav>
-      <button class="menu-toggle" aria-label="Toggle navigation">
-        <span class="burger"></span>
-        <span class="burger"></span>
-        <span class="burger"></span>
-      </button>
-    </nav>
-  </header>
+    </header>
 
-  <main>
-    <h1>Contact Me</h1>
-    <form name="userdata" method="post" action="/send/">
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" />
-      <label for="name">Email:</label>
-      <input type="text" id="name" name="name" />
-      <label for="message">Message:</label>
-      <textarea id="message" name="message" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-  </main>
-  <footer class="footer">
-    <p>&copy; All rights reserved. 2025</p>
-  </footer>
-</body>
-<script>
-  // Seleccionar el botón y el menú
-  const burgerButton = document.querySelector('.menu-toggle');
-  const menu = document.querySelector('.menu');
-  
-  // Añadir el evento para el clic
-  burgerButton.addEventListener('click', () => {
-    // Alternar la clase 'active' en el menú para mostrar u ocultar
-    menu.classList.toggle('active');
-  });
+    <main class="page">
+      <h1>Contact Me</h1>
+      <form name="userdata" method="post" action="/send/">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" />
+        <label for="name">Email:</label>
+        <input type="text" id="name" name="name" />
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </main>
+    <footer class="footer">
+      <p>&copy; All rights reserved. 2025</p>
+    </footer>
+  </body>
+  <script>
+    // Seleccionar el botón y el menú
+    const burgerButton = document.querySelector(".menu-toggle");
+    const menu = document.querySelector(".menu");
+
+    // Añadir el evento para el clic
+    burgerButton.addEventListener("click", () => {
+      // Alternar la clase 'active' en el menú para mostrar u ocultar
+      menu.classList.toggle("active");
+    });
   </script>
 </html>
