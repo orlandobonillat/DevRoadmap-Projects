@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  margin: 0;
 }
 
 body {
@@ -26,11 +27,12 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 40px;
   background-color: var(--header-background);
   position: sticky;
   top: 0;
+  padding: 40px;
   font-size: 14px;
+  box-shadow: 0 1px 0 0 hsla(0, 0%, 100%, 0.1);
 }
 
 .logo {
