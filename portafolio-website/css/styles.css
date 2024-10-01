@@ -1,16 +1,19 @@
 * {
   box-sizing: border-box;
-  margin: 0px 5px;
+  margin: 0px;
 }
 
 body {
   font-family: "Noto Sans", sans-serif;
   background-color: var(--background-color);
+  margin-right: 4rem;
+  margin-left: 4rem;
   color: var(--text-color);
   /*background: linear-gradient(to right, #F7F7F7, #F5F5F5);*/
   /* Gradiente de gris claro a blanco humo */
   line-height: 1.6;
   height: 100%;
+
 }
 
 .nav-principal {
@@ -32,6 +35,7 @@ header {
   position: sticky;
   top: 0;
   padding: 0.5rem 1rem;
+  margin-bottom: -116px;
   font-size: 14px;
   /* box-shadow: 0 1px 0 0 hsla(0, 0%, 100%, 0.1); */
 }
@@ -51,6 +55,7 @@ header {
 a:hover {
   text-decoration: underline;
 }
+
 .page {
   display: flex;
   flex-direction: column;
@@ -59,32 +64,40 @@ a:hover {
   background: var(--main-color);
   height: 100%;
 }
+
 .image-logo {
   width: 4rem;
   height: 4rem;
   border-radius: 9999px;
   object-fit: cover;
-  /* margin-right: 10px; */
+  margin-right: 10px;
   max-width: 100%;
 }
 
 .title-home {
   font-size: 47px;
   font-weight: bold;
-  text-align: center;
+  text-align: left;
+}
+
+.title-content {
+  font-size: 47px;
+  font-weight: bold;
+  text-align: left;
+  margin: 14rem 0 0;
 }
 
 .text-home {
-  text-align: center;
   color: #666;
 }
 
 .home-section {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  margin: 14rem 0;
+  align-items: start;
+  margin: 14rem 0 0;
 }
+
 .home-section-content {
   width: 100%;
 }
@@ -92,8 +105,9 @@ a:hover {
 .content {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
   gap: 30px;
-  margin: 0 auto;
+  margin: 12rem 0 12rem 0;
 }
 
 .main-projects,
@@ -102,20 +116,22 @@ a:hover {
   flex: 1;
   opacity: 1;
   min-width: 300px;
-  border: 1px solid rgba(63, 63, 70, .4);;
+  border: 1px solid rgba(63, 63, 70, .4);
+  ;
   padding: 20px;
   border-radius: 1rem;
 }
+
 .main-projects:hover,
 .main-experience:hover,
 .main-education:hover,
 .content-reviews:hover {
   box-shadow: var(--box-shadow-dark);
 }
+
 h2 {
   margin-bottom: 15px;
   padding-bottom: 10px;
-  border-bottom: 2px solid #333;
 }
 
 ul {
@@ -137,11 +153,13 @@ a:hover {
   text-decoration: none;
   color: var(--link-hover-color);
 }
+
 .visit-profile {
   font-size: 14px;
   padding: 5px;
   color: #0070f3;
 }
+
 .visit-profile:hover {
   background: var(--link-background);
   border-radius: 5px;
@@ -162,15 +180,12 @@ a:hover {
 }
 
 .section-reviews {
-  margin-top: 5rem;
   padding: 20px;
   font-family: Arial, sans-serif;
+  padding-bottom: 8rem;
 }
 
-h2 {
-  text-align: center;
-  margin-bottom: 20px;
-}
+
 
 .main-reviews {
   display: flex;
@@ -212,15 +227,14 @@ h2 {
 
 .footer {
   text-align: center;
-  margin-top: 8rem;
   padding-top: 2.5rem;
   padding-bottom: 4rem;
   font-size: 0.8em;
   color: #888;
   width: 100%;
-  border-top-width: 1px;
+  border-top: 1px solid var(--border-footer);
   background-color: var(--main-color);
-  box-shadow: 0 -1px 0 0 hsla(0, 0%, 100%, 0.1);
+
 }
 
 .menu-toggle {
@@ -237,8 +251,10 @@ h2 {
   display: block;
   position: relative;
   background-color: var(--menu-color);
-  margin: 5px auto; /* Espaciado entre las líneas */
-  transition: background-color 0.3s; /* Transición suave para el color */
+  margin: 5px auto;
+  /* Espaciado entre las líneas */
+  transition: background-color 0.3s;
+  /* Transición suave para el color */
 }
 
 .burger::before,
@@ -260,8 +276,12 @@ h2 {
 
 /* Media Queries for Responsive layout */
 
-@media (width <= 650px) {
+@media (width <=650px) {
   /* Media Queries for navigation navbar */
+
+  body {
+    margin: 0
+  }
 
   .nav-principal {
     display: flex;
@@ -320,21 +340,22 @@ h2 {
 
 /* Modo Claro (por defecto) */
 :root {
-  --background-color: #fff;
+  --background-color: #fafafa;
   --text-color: #171717;
-  --header-background: #fafafa;
+  --header-background: #fff;
   --menu-color: #171717;
   --main-color: #fff;
   --link-color: #666;
   --link-hover-color: #8f1744;
   --link-background: #e5e0e0;
   --box-shadow-dark: 0 2px 30px rgba(0, 0, 0, 0.1);
+  --border-footer: rgba(244 244 245);
 }
 
 /* Modo Oscuro */
 @media (prefers-color-scheme: dark) {
   :root {
-    --background-color: #18181b;
+    --background-color: #000;
     --text-color: #f7f7f7;
     --header-background: #18181b;
     --menu-color: #f7f7f7;
@@ -342,6 +363,8 @@ h2 {
     --link-color: #888;
     --link-hover-color: #fff;
     --link-background: #333;
-    --box-shadow-dark: 0 2px 10px rgba(255, 255, 255, 0.1); /* Sombra para el modo oscuro */
+    --border-footer: rgba(63, 63, 70, .4);
+    --box-shadow-dark: 0 2px 10px rgba(255, 255, 255, 0.1);
+    /* Sombra para el modo oscuro */
   }
 }
