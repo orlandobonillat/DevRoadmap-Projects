@@ -1,157 +1,164 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Esta es la parte del homepage de la web."
+    />
+    <meta
+      name="keywords"
+      content="frontend developer, web development, HTML, CSS, JavaScript, portfolio"
+    />
+    <meta name="author" content="Orlando Bonilla" />
+    <title>Frontend Developer - Home</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Favicon-->
+    <link rel="icon" href="img/favicon.ico" type="image/ico" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Esta es la parte del homepage de la web." />
-  <meta name="keywords" content="frontend developer, web development, HTML, CSS, JavaScript, portfolio" />
-  <meta name="author" content="Orlando Bonilla" />
-  <title>Frontend Developer - Home</title>
-  <link rel="stylesheet" href="css/styles.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-    rel="stylesheet" />
-  <!-- Favicon-->
-  <link rel="icon" href="img/favicon.ico" type="image/ico" />
-</head>
-
-<body>
-  <header>
-    <nav class="nav-principal">
-      <div class="logo">
-        <img src="img/unnamed.jpg" alt="logo" class="image-logo" />
-        <span class="name">Orlando Bonilla</span>
-      </div>
-      <nav class="menu">
-        <a href="homepage.html">Home</a>
-        <a href="projects.html">Projects</a>
-        <a href="articles.html">Articles</a>
-        <a href="contact.html">Contact</a>
+  <body>
+    <header>
+      <nav class="nav-principal">
+        <div class="logo">
+          <img src="img/unnamed.jpg" alt="logo" class="image-logo" />
+          <span class="name">Orlando Bonilla</span>
+        </div>
+        <nav class="menu">
+          <a href="homepage.html">Home</a>
+          <a href="projects.html">Projects</a>
+          <a href="articles.html">Articles</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <button class="menu-toggle" aria-label="Toggle navigation">
+          <span class="burger"></span>
+          <span class="burger"></span>
+          <span class="burger"></span>
+        </button>
       </nav>
-      <button class="menu-toggle" aria-label="Toggle navigation">
-        <span class="burger"></span>
-        <span class="burger"></span>
-        <span class="burger"></span>
-      </button>
-    </nav>
-  </header>
+    </header>
 
-  <main class="page">
-    <section class="home-section">
-      <div class="home-section-content">
-        <h1 class="title-home">Frontend Developer</h1>
-        <p class="text-home">
-          I'm a Frontend Developer with 10 years of experience. Lorem ipsum
-          dolor sit amet consectetur adipisicing elit. Sit, consequatur
-          cupiditate odio facere similique quisquam vitae maiores voluptates
-          modi quod harum fugit molestias minima, quia, voluptas ea quis nulla
-          exercitationem!
-        </p>
-      </div>
-    </section>
-    <section class="content">
-      <div class="main-projects">
-        <h2>Projects</h2>
-        <p>HTML Only Portfolio</p>
-        <p>Calculator</p>
-        <p>Quiz App</p>
-        <p>Countdown Timer</p>
-        <p>Product Upcoming Page</p>
-      </div>
-
-      <div class="main-experience">
-        <h2>Work Experience</h2>
-        <article>
-          <h3>roadmap.sh</h3>
-          <p>Solved all the frontend projects</p>
-          <a href="#"><span class="visit-profile">Visit my Profile</span></a>
-        </article>
-        <article>
-          <h3>OpenSource Work</h3>
-          <p>
-            Contributed to 50 opensource projects. Made my own projects with
-            200 GitHub Stars.
+    <main class="page">
+      <section class="home-section">
+        <div class="home-section-content">
+          <h1 class="title-home">Frontend Developer</h1>
+          <p class="text-home">
+            I'm a Frontend Developer with 10 years of experience. Lorem ipsum
+            dolor sit amet consectetur adipisicing elit. Sit, consequatur
+            cupiditate odio facere similique quisquam vitae maiores voluptates
+            modi quod harum fugit molestias minima, quia, voluptas ea quis nulla
+            exercitationem!
           </p>
-          <a href="#"><span class="visit-profile">Visit my GitHub Profile</span></a>
-        </article>
-      </div>
+        </div>
+      </section>
+      <section class="content">
+        <div class="main-projects">
+          <h2>Projects</h2>
+          <p>HTML Only Portfolio</p>
+          <p>Calculator</p>
+          <p>Quiz App</p>
+          <p>Countdown Timer</p>
+          <p>Product Upcoming Page</p>
+        </div>
 
-      <div class="main-education">
-        <h2>Education</h2>
-        <p>
-          Graduated with 3.76 out of 4 CGPA. Won Acme Hackathon. Organized 30
-          sessions.
-        </p>
+        <div class="main-experience">
+          <h2>Work Experience</h2>
+          <article>
+            <h3>roadmap.sh</h3>
+            <p>Solved all the frontend projects</p>
+            <a href="#"><span class="visit-profile">Visit my Profile</span></a>
+          </article>
+          <article>
+            <h3>OpenSource Work</h3>
+            <p>
+              Contributed to 50 opensource projects. Made my own projects with
+              200 GitHub Stars.
+            </p>
+            <a href="#"
+              ><span class="visit-profile">Visit my GitHub Profile</span></a
+            >
+          </article>
+        </div>
 
-        <h3>Courses I took:</h3>
-        <ul>
-          <li>Object Oriented Programming</li>
-          <li>Data Structures and Algorithms</li>
-          <li>Web Engineering</li>
-          <li>Artificial Intelligence</li>
-          <li>Human Computer Interaction</li>
-          <li>Computer Graphics</li>
-          <li>Database Management Systems</li>
-          <li>Distributed Database Systems</li>
-          <li>Discreet Mathematics</li>
-        </ul>
-      </div>
-    </section>
-    <section class="section-reviews">
-      <h2>Reviews from my Teachers</h2>
-      <div class="main-reviews">
-        <div class="content-reviews">
+        <div class="main-education">
+          <h2>Education</h2>
           <p>
-            John doe was a brilliant student; always stood out with his
-            assignments.
+            Graduated with 3.76 out of 4 CGPA. Won Acme Hackathon. Organized 30
+            sessions.
           </p>
-          <div class="professor-reviews">
-            <span class="professor-name">Jane Doe</span>
-            <span class="professor-title">Assistant Professor</span>
+
+          <h3>Courses I took:</h3>
+          <ul>
+            <li>Object Oriented Programming</li>
+            <li>Data Structures and Algorithms</li>
+            <li>Web Engineering</li>
+            <li>Artificial Intelligence</li>
+            <li>Human Computer Interaction</li>
+            <li>Computer Graphics</li>
+            <li>Database Management Systems</li>
+            <li>Distributed Database Systems</li>
+            <li>Discreet Mathematics</li>
+          </ul>
+        </div>
+      </section>
+      <section class="section-reviews">
+        <h2>Reviews from my Teachers</h2>
+        <div class="main-reviews">
+          <div class="content-reviews">
+            <p>
+              John doe was a brilliant student; always stood out with his
+              assignments.
+            </p>
+            <div class="professor-reviews">
+              <span class="professor-name">Jane Doe</span>
+              <span class="professor-title">Assistant Professor</span>
+            </div>
+          </div>
+          <div class="content-reviews">
+            <p>
+              John doe was a brilliant student; always stood out with his
+              assignments.
+            </p>
+            <div class="professor-reviews">
+              <span class="professor-name">Jane Doe</span>
+              <span class="professor-title">Assistant Professor</span>
+            </div>
+          </div>
+          <div class="content-reviews">
+            <p>
+              John doe was a brilliant student; always stood out with his
+              assignments.
+            </p>
+            <div class="professor-reviews">
+              <span class="professor-name">Jane Doe</span>
+              <span class="professor-title">Assistant Professor</span>
+            </div>
           </div>
         </div>
-        <div class="content-reviews">
-          <p>
-            John doe was a brilliant student; always stood out with his
-            assignments.
-          </p>
-          <div class="professor-reviews">
-            <span class="professor-name">Jane Doe</span>
-            <span class="professor-title">Assistant Professor</span>
-          </div>
-        </div>
-        <div class="content-reviews">
-          <p>
-            John doe was a brilliant student; always stood out with his
-            assignments.
-          </p>
-          <div class="professor-reviews">
-            <span class="professor-name">Jane Doe</span>
-            <span class="professor-title">Assistant Professor</span>
-          </div>
-        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer">
+        <p>&copy; Orlando Bonila. All rights reserved. 2025</p>
       </div>
-    </section>
-  </main>
-  <footer>
-    <div class="footer">
-      <p>&copy; Orlando Bonila. All rights reserved. 2025</p>
-    </div>
-  </footer>
-</body>
-<script>
-  // Seleccionar el botón y el menú
-  const burgerButton = document.querySelector(".menu-toggle");
-  const menu = document.querySelector(".menu");
+    </footer>
+  </body>
+  <script>
+    // Seleccionar el botón y el menú
+    const burgerButton = document.querySelector(".menu-toggle");
+    const menu = document.querySelector(".menu");
 
-  // Añadir el evento para el clic
-  burgerButton.addEventListener("click", () => {
-    // Alternar la clase 'active' en el menú para mostrar u ocultar
-    menu.classList.toggle("active");
-  });
-</script>
-
+    // Añadir el evento para el clic
+    burgerButton.addEventListener("click", () => {
+      // Alternar la clase 'active' en el menú para mostrar u ocultar
+      menu.classList.toggle("active");
+    });
+  </script>
 </html>
