@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  margin: 0;
+  margin: 0px 5px;
 }
 
 body {
@@ -10,6 +10,7 @@ body {
   /*background: linear-gradient(to right, #F7F7F7, #F5F5F5);*/
   /* Gradiente de gris claro a blanco humo */
   line-height: 1.6;
+  height: 100%;
 }
 
 .nav-principal {
@@ -30,9 +31,9 @@ header {
   background-color: var(--header-background);
   position: sticky;
   top: 0;
-  padding: 20px;
+  padding: 0.5rem 1rem;
   font-size: 14px;
-  box-shadow: 0 1px 0 0 hsla(0, 0%, 100%, 0.1);
+  /* box-shadow: 0 1px 0 0 hsla(0, 0%, 100%, 0.1); */
 }
 
 .logo {
@@ -63,7 +64,7 @@ a:hover {
   height: 4rem;
   border-radius: 9999px;
   object-fit: cover;
-  margin-right: 10px;
+  /* margin-right: 10px; */
   max-width: 100%;
 }
 
@@ -217,6 +218,7 @@ h2 {
   font-size: 0.8em;
   color: #888;
   width: 100%;
+  border-top-width: 1px;
   background-color: var(--main-color);
   box-shadow: 0 -1px 0 0 hsla(0, 0%, 100%, 0.1);
 }
@@ -258,7 +260,7 @@ h2 {
 
 /* Media Queries for Responsive layout */
 
-@media (width <= 550px) {
+@media (width <= 650px) {
   /* Media Queries for navigation navbar */
 
   .nav-principal {
@@ -334,7 +336,7 @@ h2 {
   :root {
     --background-color: #18181b;
     --text-color: #f7f7f7;
-    --header-background: #000;
+    --header-background: #18181b;
     --menu-color: #f7f7f7;
     --main-color: #18181b;
     --link-color: #888;
