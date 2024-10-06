@@ -88,9 +88,13 @@ a:hover {
   height: 3rem;
   border-radius: 9999px;
   object-fit: cover;
-  margin-right: 10px;
   max-width: 100%;
+  margin-right: 0.5rem;
+  border-radius: 9999px;
+  filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7));
 }
+
+
 
 .title-home {
   font-size: 47px;
@@ -127,6 +131,9 @@ a:hover {
   gap: 30px;
   margin: 12rem 0 12rem 0;
 }
+
+
+
 
 .main-projects,
 .main-experience,
@@ -241,11 +248,80 @@ a:hover {
   font-size: 0.9em;
 }
 
+.content-contact {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  margin: 6rem 0 12rem 0;
+}
+.content-information {
+  flex: 1;
+  border-radius: 1rem;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 150px;
+}
+.content-form {
+  flex: 1;
+  border-radius: 1rem;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 150px;
+  border: 1px solid var(--border-footer);
+}
+
+.list-social {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+  & span {
+ margin-left: 1rem;
+ font-size: 14px;
+  }
+  & a{
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+  }
+}
 .form-style {
   display: flex;
   flex-direction: column;
   gap: 15px;
-  padding: 2rem;
+
+  & input {
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid #ccc;
+    margin-bottom: 0.5rem;
+    &:focus {
+      outline: none;
+      border-color: var(--link-color);
+    }
+  }
+  & textarea {
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid #ccc;
+    margin-bottom: 0.5rem;
+    &:focus {
+      outline: none;
+      border-color: var(--link-color);
+    }
+  }
+  & button {
+    padding: 0.5rem 1rem;
+    color: inherit;
+    border-radius: 0.5rem;
+    background-color: var(--background-button);
+    border: none;
+    cursor: pointer;
+  }
 }
 
 .footer {
@@ -260,6 +336,8 @@ a:hover {
   /* box-shadow: var(--border-footer); */
   /* --tw-border-opacity: 1;
   border-color: rgb(--border-footer / var(--tw-border-opacity)); */
+
+
 }
 
 .menu-toggle {
@@ -327,7 +405,7 @@ a:hover {
     flex-direction: column;
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.2s ease;
+    transition: max-height 0.5s ease;
     opacity: 0;
     background: none;
     border: none;
@@ -368,6 +446,10 @@ a:hover {
   .professor-reviews {
     text-align: center;
   }
+  .content-contact {
+    flex-direction: column;
+    gap: 20px;
+  }
 }
 
 /* Modo Claro (por defecto) */
@@ -379,6 +461,7 @@ a:hover {
   --main-color: #fff;
   --link-color: #666;
   --background-menu: #fff;
+  --background-button: #e5e0e0;
   --link-background: #e5e0e0;
   --box-shadow-dark: 0 2px 30px rgba(0, 0, 0, 0.1);
   --border-footer: rgba(244 244 245);
@@ -392,6 +475,7 @@ a:hover {
     --header-background: #18181b;
     --menu-color: #f7f7f7;
     --main-color: #18181b;
+    --background-button: #252529;
     --background-menu: #252529;
     --link-color: #888;
     --link-background: #333;
