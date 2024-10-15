@@ -94,8 +94,6 @@ a:hover {
   filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7));
 }
 
-
-
 .title-home {
   font-size: 47px;
   font-weight: bold;
@@ -131,9 +129,6 @@ a:hover {
   gap: 30px;
   margin: 12rem 0 12rem 0;
 }
-
-
-
 
 .main-projects,
 .main-experience,
@@ -254,6 +249,7 @@ a:hover {
   gap: 30px;
   margin: 6rem 0 12rem 0;
 }
+
 .content-information {
   flex: 1;
   border-radius: 1rem;
@@ -274,16 +270,18 @@ a:hover {
   border: 1px solid var(--border-footer);
 }
 
+
+
 .list-social {
   display: flex;
   flex-direction: column;
   list-style: none;
   padding: 0;
   & span {
- margin-left: 1rem;
- font-size: 14px;
+    margin-left: 1rem;
+    font-size: 14px;
   }
-  & a{
+  & a {
     display: flex;
     align-items: center;
     margin-top: 1rem;
@@ -300,8 +298,7 @@ a:hover {
     border: 1px solid #ccc;
     margin-bottom: 0.5rem;
     &:focus {
-      outline: none;
-      border-color: var(--link-color);
+        outline: 5px solid rgba(63, 63, 70, 0.4);
     }
   }
   & textarea {
@@ -310,8 +307,7 @@ a:hover {
     border: 1px solid #ccc;
     margin-bottom: 0.5rem;
     &:focus {
-      outline: none;
-      border-color: var(--link-color);
+      outline: 5px solid rgba(63, 63, 70, 0.4);
     }
   }
   & button {
@@ -336,8 +332,6 @@ a:hover {
   /* box-shadow: var(--border-footer); */
   /* --tw-border-opacity: 1;
   border-color: rgb(--border-footer / var(--tw-border-opacity)); */
-
-
 }
 
 .menu-toggle {
