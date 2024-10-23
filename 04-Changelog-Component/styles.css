@@ -40,7 +40,7 @@ p {
 .timeline::before {
   content: "";
   position: absolute;
-  left:156px;
+  left:183px;
   top: 0;
   bottom: 0;
   width: 2px;
@@ -58,7 +58,7 @@ p {
   text-align: right;
   color: gray;
   font-size: 14px;
-  padding-right: 10px;
+  padding-right: 5px;
 }
 
 .dot {
@@ -66,11 +66,11 @@ p {
   height: 14px;
   background-color: black;
   border-radius: 50%;
-  margin: 0 20px;
+  margin: 0 26px;
   z-index: 1;
   flex-shrink: 0;
   position: relative;
-  left: -10px; 
+  left: 11px; 
 }
 
 .description {
@@ -92,4 +92,12 @@ p {
 
 .button:hover {
   background-color: gray;
+}
+
+@media (width <=380px) {
+  /* Media Queries for navigation navbar */
+
+  body {
+    height: 100%;
+  }
 }
