@@ -94,9 +94,7 @@ p {
   background-color: gray;
 }
 
-@media (width <=380px) {
-  /* Media Queries for navigation navbar */
-
+@media (width <=768px) {
   body {
     height: 100%;
   }
