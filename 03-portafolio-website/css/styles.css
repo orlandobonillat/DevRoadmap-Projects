@@ -18,6 +18,7 @@ body {
   border-left: 1px solid hsla(240, 5%, 84%, 0.2);
   border-right: 1px solid hsla(240, 5%, 84%, 0.2);
 }
+
 .content-body {
   display: flex;
   width: 100%;
