@@ -4,7 +4,7 @@
 }
 
 body {
-  font-family: "Noto Sans", sans-serif;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
   background-color: var(--background-color);
   margin-right: 12rem;
   margin-left: 12rem;
