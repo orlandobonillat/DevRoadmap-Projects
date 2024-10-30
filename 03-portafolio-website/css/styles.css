@@ -4,7 +4,7 @@
 }
 
 body {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
   background-color: var(--background-color);
   margin-right: 12rem;
   margin-left: 12rem;
@@ -109,7 +109,7 @@ a:hover {
 }
 
 .text-home {
-  color: #666;
+  color: var(--text-home-color);
 }
 
 .home-section {
@@ -178,7 +178,7 @@ a:hover {
 .visit-profile {
   font-size: 14px;
   padding: 5px;
-  color: #0070f3;
+  color: var(--visit-profile-color);
 }
 
 .visit-profile:hover {
@@ -234,13 +234,13 @@ a:hover {
 
 .professor-name {
   display: block;
-  color: #333;
+  color: var(--professor-name-color);
   font-weight: bold;
 }
 
 .professor-title {
   display: block;
-  color: #888;
+  color: var(--text-home-color);
   font-size: 0.9em;
 }
 
@@ -271,8 +271,6 @@ a:hover {
   border: 1px solid var(--border-footer);
 }
 
-
-
 .list-social {
   display: flex;
   flex-direction: column;
@@ -299,7 +297,7 @@ a:hover {
     border: 1px solid #ccc;
     margin-bottom: 0.5rem;
     &:focus {
-        outline: 5px solid rgba(63, 63, 70, 0.4);
+      outline: 5px solid rgba(63, 63, 70, 0.4);
     }
   }
   & textarea {
@@ -326,7 +324,7 @@ a:hover {
   padding-top: 2.5rem;
   padding-bottom: 4rem;
   font-size: 0.8em;
-  color: #888;
+  color: #ababab;
   width: 100%;
   border-top: 1px solid var(--border-footer);
   background-color: var(--main-color);
@@ -455,6 +453,9 @@ a:hover {
   --menu-color: #171717;
   --main-color: #fff;
   --link-color: #666;
+  --visit-profile-color: #0053b3;
+  --text-home-color: #575757;
+  --professor-name-color: #3b3b3b;
   --background-menu: #fff;
   --background-button: #e5e0e0;
   --link-background: #e5e0e0;
@@ -470,9 +471,12 @@ a:hover {
     --header-background: #18181b;
     --menu-color: #f7f7f7;
     --main-color: #18181b;
+    --text-home-color: #b0b0b0;
+    --professor-name-color: #a8a8a8;
     --background-button: #252529;
     --background-menu: #252529;
-    --link-color: #888;
+    --link-color: #b0b0b0;
+    --visit-profile-color: #61abff;
     --link-background: #333;
     --border-footer: rgba(63, 63, 70, 0.4);
     --box-shadow-dark: 0 2px 10px rgba(255, 255, 255, 0.1);
